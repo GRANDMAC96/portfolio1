@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -20,11 +19,11 @@ function App() {
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav">
-            <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#about">About</a></li>
-            <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-            <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#education">Education</a></li>
-            <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-            <li className="nav-item"><a className="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+            <li className="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent"><a className="nav-link" href="#about">About</a></li>
+            <li className="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent"><a className="nav-link" href="#skills">Skills</a></li>
+            <li className="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent"><a className="nav-link" href="#education">Education</a></li>
+            <li className="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent"><a className="nav-link" href="#experience">Experience</a></li>
+            <li className="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent"><a className="nav-link" href="#interests">Interests</a></li>
           </ul>
         </div>
       </nav>
@@ -82,29 +81,7 @@ function App() {
           </div>
         </section>
         <hr className="m-0" />
-        {/* Experience */}
-        <section className="resume-section" id="experience">
-          <div className="resume-section-content">
-            <h2 className="mb-5">Experience</h2>
-            <div className="d-flex flex-column flex-md-row justify-content-between mb-5">
-              <div className="flex-grow-1">
-                <h3 className="mb-0">Bartender</h3>
-                <div className="subheading mb-3">Brewhouse & Kitchen - Bristol, United Kingdom</div>
-                <p>Since moving to Bristol in October 2019 I have been working as a Bartender/Waiter at the Brewhouse and Kitchen Brewery. They double up as a pub and brewery and sell a variety of home brewed beer along with tasty food. </p>
-              </div>
-              <div className="flex-shrink-0"><span className="text-primary">October 2019 - March 2020</span></div>
-            </div>
-            <div className="d-flex flex-column flex-md-row justify-content-between mb-5">
-              <div className="flex-grow-1">
-                <h3 className="mb-0">Product Analyst</h3>
-                <div className="subheading mb-3">Livelink - Havant, United Kingdom</div>
-                <p>Undertook a summer placement (2 months) where I completed spreadsheets on all current products and learnt about sale trends. The analysis I completed allowed the planning of specific offers at specific times of the year.</p>
-              </div>
-              <div className="flex-shrink-0"><span className="text-primary">June 2019 - August 2019</span></div>
-            </div>
-          </div>
-        </section>
-        <hr className="m-0" />
+
         {/* Education */}
         <section className="resume-section" id="education">
           <div className="resume-section-content">
@@ -140,6 +117,31 @@ function App() {
           </div>
         </section>
         <hr className="m-0" />
+
+        {/* Experience */}
+        <section className="resume-section" id="experience">
+          <div className="resume-section-content">
+            <h2 className="mb-5">Experience</h2>
+            <div className="d-flex flex-column flex-md-row justify-content-between mb-5">
+              <div className="flex-grow-1">
+                <h3 className="mb-0">Bartender</h3>
+                <div className="subheading mb-3">Brewhouse & Kitchen - Bristol, United Kingdom</div>
+                <p>Since moving to Bristol in October 2019 I have been working as a Bartender/Waiter at the Brewhouse and Kitchen Brewery. They double up as a pub and brewery and sell a variety of home brewed beer along with tasty food. </p>
+              </div>
+              <div className="flex-shrink-0"><span className="text-primary">October 2019 - March 2020</span></div>
+            </div>
+            <div className="d-flex flex-column flex-md-row justify-content-between mb-5">
+              <div className="flex-grow-1">
+                <h3 className="mb-0">Product Analyst</h3>
+                <div className="subheading mb-3">Livelink - Havant, United Kingdom</div>
+                <p>Undertook a summer placement (2 months) where I completed spreadsheets on all current products and learnt about sale trends. The analysis I completed allowed the planning of specific offers at specific times of the year.</p>
+              </div>
+              <div className="flex-shrink-0"><span className="text-primary">June 2019 - August 2019</span></div>
+            </div>
+          </div>
+        </section>
+        <hr className="m-0" />
+
 
         {/* Interests */}
         <section className="resume-section" id="interests">
