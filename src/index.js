@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/css/styles.css';
-// import 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
