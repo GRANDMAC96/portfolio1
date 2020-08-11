@@ -12,12 +12,12 @@ function App() {
     <>
       {/* Navigation */}
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-        <a className="navbar-brand js-scroll-trigger" href="#page-top">
+        <a className="navbar-brand" href="#about">
           <span className="d-block d-lg-none">Henry Macfarlane</span>
           <span className="d-none d-lg-block"><img className="img-fluid img-profile rounded-circle mx-auto mb-2" src={require("./assets/img/profile.jpg")} alt="img of henry" /></span>
         </a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <button className="navbar-toggler dropdown" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"><span className="navbar-toggler-icon"></span></button>
+        <div className="navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav">
             <li className="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent"><a className="nav-link" href="#about">About</a></li>
             <li className="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent"><a className="nav-link" href="#skills">Skills</a></li>
@@ -147,8 +147,8 @@ function App() {
         <section className="resume-section" id="interests">
           <div className="resume-section-content">
             <h2 className="mb-5">Interests</h2>
-            <p>Apart from being a web developer, I enjoy most of my time doing outdoors activities such as tennis and I run from time to time.</p>
-            <p className="mb-0">However when inside I do enjoy watching movies/TV shows and some ping pong too. </p>
+            <p>Apart from being a web developer, I enjoy being outdoors and doing activities such as tennis and football. I also run from time to time.</p>
+            <p className="mb-0">However when inside I enjoy watching movies/TV shows and some ping pong too. </p>
           </div>
         </section>
         <hr className="m-0" />
